@@ -3,8 +3,12 @@
     padding-top: 170px;
     height: 850px;
     background: linear-gradient(#ffa949, transparent 90%),
-        linear-gradient(0deg, #fff, transparent),
-        #ffa949 url('../img/mountains.jpg') no-repeat center;
+    linear-gradient(0deg, #fff, transparent),
+    #ffa949 url('#{$path-img}/mountains.jpg') no-repeat center;
     background-size: cover;
     color: white;
+    @media #{$brk-narrow} {
+        max-height: 380px;
+        padding: 50px 25px 0;
+    }
 }
